@@ -3,25 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
+    android:padding="@dimen/dp_10"
     android:id="@+id/rl_layout">
 
     <TextView
         android:visibility="gone"
         android:layout_centerVertical="true"
         android:id="@+id/tv_bar"
-        android:layout_width="5dp"
-        android:layout_height="25dp"
+        android:layout_width="@dimen/dp_5"
+        android:layout_height="@dimen/dp_25"
         android:background="@color/red" />
     <TextView
         android:id="@+id/tv_sort"
         android:layout_toRightOf="@id/tv_bar"
         android:gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/dp_70"
         android:text="推荐分类"
-        android:textSize="15sp"
-        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginLeft="@dimen/dp_10"
         tools:ignore="HardcodedText,RtlHardcoded" />
 
     <TextView

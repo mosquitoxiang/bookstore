@@ -8,14 +8,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="@dimen/dp_10">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="配送至"
-            android:textSize="20sp"
+            android:textSize="@dimen/sp_20"
             tools:ignore="HardcodedText" />
 
         <com.joanzapata.iconify.widget.IconTextView
@@ -23,74 +23,74 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
             android:text="{fa-times}"
             android:textColor="@color/gray"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="@dimen/dp_10">
 
         <com.joanzapata.iconify.widget.IconTextView
             android:id="@+id/tv_location1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
             android:text="{fa-map-marker}"
             android:textColor="@color/red"
-            android:textSize="15sp"
+            android:textSize="@dimen/sp_15"
             tools:ignore="HardcodedText" />
         <TextView
             android:layout_toRightOf="@id/tv_location1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="河南南阳市宛城区南阳理工学院-软件学院"
-            android:textSize="15sp"
+            android:text="深圳市南山区"
+            android:textSize="@dimen/sp_15"
             tools:ignore="HardcodedText"
             android:textColor="@color/red"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="@dimen/dp_10">
 
         <com.joanzapata.iconify.widget.IconTextView
             android:id="@+id/tv_location2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
             android:text="{fa-map-marker}"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="@dimen/sp_15"
             tools:ignore="HardcodedText" />
         <TextView
             android:layout_toRightOf="@id/tv_location2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="上海浦东新区川沙新镇-绿海家园"
-            android:textSize="15sp"
+            android:text="深圳市南山区"
+            android:textSize="@dimen/sp_15"
             tools:ignore="HardcodedText"
             android:textColor="@color/black"/>
     </RelativeLayout>
     <!-- 占位-->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="@dimen/dp_300"
         android:background="@color/white"/>
     <TextView
         android:id="@+id/other_addr"
         android:background="@color/red"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/dp_70"
         android:text="选择其他地址"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="@dimen/sp_18"
         tools:ignore="HardcodedText" />
 </LinearLayout>

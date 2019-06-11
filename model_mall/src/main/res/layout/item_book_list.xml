@@ -6,10 +6,10 @@
     android:id="@+id/cardview_item_book_list"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="8dp"
-    app:contentPadding="5dp"
-    android:layout_margin="10dp">
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_8"
+    app:contentPadding="@dimen/dp_5"
+    android:layout_margin="@dimen/dp_10">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,24 +17,24 @@
 
         <ImageView
             android:id="@+id/img_book_item_book_list"
-            android:layout_width="153dp"
-            android:layout_height="220dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_272"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_8"
             android:src="@drawable/java1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_book_name_item_book_list"
-            android:layout_width="110dp"
+            android:layout_width="@dimen/dp_110"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_8"
             android:gravity="center"
             android:text="书名:"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,26 +44,25 @@
 
         <TextView
             android:id="@+id/tv_book_info_item_book_list"
-            android:layout_width="201dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="116dp"
-            android:layout_marginEnd="8dp"
-            android:text="书籍介绍:"
-            android:maxLines="7"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_139"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_24"
             android:ellipsize="end"
+            android:maxLines="7"
+            android:text="书籍介绍:"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/img_book_item_book_list"
+            app:layout_constraintTop_toBottomOf="@+id/tv_class_name_item_book_list" />
 
         <TextView
             android:id="@+id/tv_stat_name_item_book_list"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="8dp"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_76"
+            android:layout_marginEnd="@dimen/dp_8"
             android:background="@drawable/textview_border_blue"
             android:text="连载"
             android:textColor="@color/purple"
@@ -76,9 +75,9 @@
             android:id="@+id/tv_class_name_item_book_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_76"
+            android:layout_marginEnd="@dimen/dp_8"
             android:background="@drawable/textview_border_purple"
             android:text="传统武侠"
             android:textColor="@color/blue"
@@ -89,15 +88,15 @@
 
         <TextView
             android:id="@+id/tv_author_name_item_book_list"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="8dp"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_26"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_48"
+            android:layout_marginEnd="@dimen/dp_8"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/img_book_item_book_list"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>

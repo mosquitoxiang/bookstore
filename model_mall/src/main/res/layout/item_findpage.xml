@@ -8,11 +8,11 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="20dp"
-    app:contentPadding="10dp"
-    android:layout_marginBottom="10dp"
-    android:layout_marginTop="10dp">
+    app:cardCornerRadius="@dimen/dp_10"
+    app:cardElevation="@dimen/dp_20"
+    app:contentPadding="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,27 +21,27 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:padding="10dp">
+            android:layout_height="@dimen/dp_70"
+            android:padding="@dimen/dp_10">
 
             <de.hdodenhof.circleimageview.CircleImageView
 
                 android:id="@+id/img_head"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
                 android:src="@drawable/chengxuyuan" />
 
             <TextView
                 android:id="@+id/user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_toEndOf="@id/img_head"
                 android:layout_toRightOf="@id/img_head"
                 android:textColor="@color/red"
                 android:text="dev晴天"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -49,12 +49,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/user"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_toEndOf="@id/img_head"
                 android:layout_toRightOf="@id/img_head"
                 android:text="星期一 10:47am"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
         </RelativeLayout>
 
@@ -62,35 +62,35 @@
             android:id="@+id/findBigImg"
             android:scaleType="fitXY"
             android:layout_width="match_parent"
-            android:layout_height="300dp" />
+            android:layout_height="@dimen/dp_300" />
         <LinearLayout
             android:gravity="center_vertical"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/dp_70"
             android:orientation="horizontal">
             <TextView
                 android:gravity="center"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="赞 1k+"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
             <TextView
                 android:gravity="center"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="评论 1W+"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
             <TextView
                 android:gravity="center"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="分享"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
     </LinearLayout>

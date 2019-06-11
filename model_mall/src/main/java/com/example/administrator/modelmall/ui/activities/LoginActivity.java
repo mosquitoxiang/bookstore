@@ -22,7 +22,6 @@ import com.example.administrator.modelmall.utils.RegularVerification;
 import com.google.gson.Gson;
 
 import org.greenrobot.eventbus.EventBus;
-import org.litepal.crud.DataSupport;
 
 import java.io.IOException;
 import java.util.List;

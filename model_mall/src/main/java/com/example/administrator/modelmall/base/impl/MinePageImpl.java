@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.administrator.modelmall.Constant.ModelConstant;
 import com.example.administrator.modelmall.R;
 import com.example.administrator.modelmall.base.BasePage;
+import com.example.administrator.modelmall.db.BookListDB;
 import com.example.administrator.modelmall.entity.ChangeNameBean;
 import com.example.administrator.modelmall.entity.LoginData;
 import com.example.administrator.modelmall.ui.activities.AboutActivity;
@@ -23,6 +24,8 @@ import com.google.gson.Gson;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+import org.litepal.LitePal;
+import org.litepal.crud.LitePalSupport;
 
 import java.io.IOException;
 
@@ -77,6 +80,8 @@ public class MinePageImpl extends BasePage implements View.OnClickListener {
                 ToastUtils.showToast(context, "待续", ToastUtils.LENGTH_SHORT);
                 break;
             case R.id.rl_setting:
+                BookListDB db = LitePal.findLast(BookListDB.class);
+                Log.d(TAG, "onClick: "+db.getAuthor());
                 context.startActivity(new Intent(context, AboutActivity.class));
                 break;
             case R.id.img_change_name_page_mine:

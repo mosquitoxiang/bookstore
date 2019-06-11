@@ -8,9 +8,9 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="3dp"
-    app:contentPadding="10dp"
+    app:cardCornerRadius="@dimen/dp_10"
+    app:cardElevation="@dimen/dp_3"
+    app:contentPadding="@dimen/dp_10"
     android:layout_marginHorizontal="10dp"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp">
@@ -28,15 +28,15 @@
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/img"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130"
             android:src="@drawable/java1" />
 
         <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_height="@dimen/dp_130"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
             android:orientation="vertical">
 
             <TextView
@@ -49,7 +49,7 @@
                 android:ems="8"
                 android:maxLines="2"
                 android:text="Java Web从入门到精通"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -57,16 +57,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="买一送一"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="@dimen/dp_30"
                 android:id="@+id/tv_total_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="￥75.00"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 android:textColor="@color/red"
                 tools:ignore="HardcodedText" />
 

@@ -8,14 +8,14 @@
     android:orientation="vertical">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/dp_70"
         android:background="@color/orange">
         <TextView
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="关于我们"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:textColor="@color/white"
             tools:ignore="HardcodedText" />
     </android.support.v7.widget.Toolbar>

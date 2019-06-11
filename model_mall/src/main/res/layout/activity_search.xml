@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.activities.SearchActivity"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="@dimen/dp_10">
     <scut.carson_ho.searchview.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:textSizeSearch="7dp"
+        app:textSizeSearch="@dimen/dp_7"
         app:textColorSearch="#3F51B5"
         app:textHintSearch="输入查询关键字"
         app:searchBlockHeight="150"

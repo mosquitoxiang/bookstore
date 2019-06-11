@@ -13,10 +13,10 @@
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/img_desc"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="@dimen/dp_5"
         android:layout_gravity="center"
         android:text="icon"
-        android:textSize="14sp"
+        android:textSize="@dimen/sp_14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

@@ -7,21 +7,21 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="3dp"
-    app:contentPadding="10dp"
+    app:cardCornerRadius="@dimen/dp_10"
+    app:cardElevation="@dimen/dp_3"
+    app:contentPadding="@dimen/dp_10"
     app:cardBackgroundColor="#515756">
 
     <RelativeLayout
-        android:padding="10dp"
+        android:padding="@dimen/dp_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/img"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -29,13 +29,13 @@
             android:src="@drawable/cat" />
 
         <TextView
-            android:textSize="15sp"
+            android:textSize="@dimen/sp_15"
             android:textColor="@color/white"
             android:id="@+id/desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="@dimen/dp_5"
             android:layout_toEndOf="@id/img"
             android:layout_toRightOf="@id/img"
             android:gravity="left"
@@ -44,7 +44,7 @@
             android:ellipsize="end"
             android:ems="8"
             android:maxLines="2"
-            android:layout_marginStart="5dp" />
+            android:layout_marginStart="@dimen/dp_5" />
     </RelativeLayout>
 
 

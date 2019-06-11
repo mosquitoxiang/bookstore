@@ -7,9 +7,9 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="3dp"
-    app:contentPadding="10dp"
+    app:cardCornerRadius="@dimen/dp_10"
+    app:cardElevation="@dimen/dp_3"
+    app:contentPadding="@dimen/dp_10"
     android:id="@+id/cardview">
 
     <android.support.v7.widget.LinearLayoutCompat
@@ -19,13 +19,13 @@
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/img"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130"
             android:src="@drawable/img_small" />
 
         <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="@dimen/dp_130"
             android:orientation="vertical">
 
             <TextView
@@ -37,13 +37,13 @@
                 android:ems="8"
                 android:maxLines="2"
                 android:text="简单的商品描述，简单的商品描述，简单的商品描述"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
 
             <android.support.v7.widget.LinearLayoutCompat
-                android:layout_width="130dp"
+                android:layout_width="@dimen/dp_130"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/dp_10"
                 android:orientation="horizontal">
 
                 <TextView
@@ -53,17 +53,17 @@
                     android:gravity="center"
                     android:text="￥23.98"
                     android:textColor="@color/red"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/sp_18"
                     tools:ignore="HardcodedText" />
                 <!-- 实际效果为服务器返回数据 这里为了方便写死下面都是12期-->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
                     android:gravity="center"
                     android:text="x 12期"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sp_15"
                     tools:ignore="HardcodedText" />
             </android.support.v7.widget.LinearLayoutCompat>
 
@@ -71,23 +71,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="@dimen/dp_10">
 
                 <TextView
                     android:id="@+id/tv_total_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="￥260"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sp_15"
                     tools:ignore="HardcodedText" />
                 <TextView
                     android:textColor="@color/red"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:id="@+id/tv_good"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="好评率：99%"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/sp_15"
                     tools:ignore="HardcodedText" />
             </android.support.v7.widget.LinearLayoutCompat>
 

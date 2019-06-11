@@ -9,16 +9,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="@dimen/dp_10">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="120dp">
+            android:layout_height="@dimen/dp_120">
 
             <ImageView
                 android:id="@+id/img_pre"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_120"
                 android:scaleType="fitXY"
                 android:src="@drawable/small1" />
 
@@ -29,7 +29,7 @@
                 android:layout_alignParentRight="true"
                 android:text="{fa-times}"
                 android:textColor="@color/gray"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -37,8 +37,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
                 android:layout_toEndOf="@id/img_pre"
                 android:layout_toRightOf="@id/img_pre"
                 android:text="商品编号：41606910863"
@@ -48,14 +48,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_20"
                 android:layout_toEndOf="@id/img_pre"
                 android:layout_toRightOf="@id/img_pre"
                 android:text="￥119"
                 android:textColor="@color/red"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
         </RelativeLayout>
@@ -64,53 +64,53 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/dp_25"
             android:text="颜色"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/dp_10"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/text_color1"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
                 android:background="@drawable/normal_selector"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="@dimen/dp_10"
                 android:text="7331黄色"
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/text_color2"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
                 android:background="@drawable/normal_selector"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="@dimen/dp_10"
                 android:text="7331灰色"
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/text_color3"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
                 android:background="@drawable/click_selector"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="@dimen/dp_10"
                 android:text="7331黑色"
                 android:textColor="@color/red"
                 tools:ignore="HardcodedText" />
@@ -119,50 +119,50 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/dp_25"
             android:text="尺码"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/dp_10"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_10"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/normal_selector"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="@dimen/dp_10"
                 android:text="L"
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
                 android:background="@drawable/normal_selector"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="@dimen/dp_10"
                 android:text="XL"
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
                 android:background="@drawable/click_selector"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="@dimen/dp_10"
                 android:text="XXL"
                 android:textColor="@color/red"
                 tools:ignore="HardcodedText" />
@@ -173,14 +173,14 @@
             android:layout_height="wrap_content"
             android:text="保障服务"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:padding="10dp">
+            android:layout_marginTop="@dimen/dp_20"
+            android:padding="@dimen/dp_10">
 
             <com.joanzapata.iconify.widget.IconTextView
                 android:id="@+id/tv_prote"
@@ -188,19 +188,19 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="{fa-exchange}"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
                 android:layout_toEndOf="@id/tv_prote"
                 android:layout_toRightOf="@id/tv_prote"
                 android:text="服务保障"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />
 
@@ -212,7 +212,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:text="{fa-question-circle}"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 android:textColor="@color/red"
                 tools:ignore="HardcodedText" />
 
@@ -220,28 +220,28 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/dp_70"
         android:orientation="horizontal">
         <LinearLayout
             android:id="@+id/ll_easy_buy"
             android:background="@color/orange"
             android:gravity="center"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical">
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
                 android:textColor="@color/white"
                 android:text="{fa-shopping-bag}"
                 tools:ignore="HardcodedText" />
             <TextView
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="@dimen/dp_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
                 android:textColor="@color/white"
                 android:text="轻松购"
                 tools:ignore="HardcodedText" />
@@ -249,11 +249,11 @@
         </LinearLayout>
         <TextView
             android:id="@+id/tv_add_cart"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="加入购物车"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             android:gravity="center"
             tools:ignore="HardcodedText"
             android:textColor="@color/white"

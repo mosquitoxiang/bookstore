@@ -11,6 +11,7 @@ import com.example.administrator.modelmall.Constant.ModelConstant;
 import com.example.administrator.modelmall.R;
 import com.example.administrator.modelmall.adapter.BookListAdapter;
 import com.example.administrator.modelmall.base.BasePage;
+import com.example.administrator.modelmall.db.BookListDB;
 import com.example.administrator.modelmall.entity.BookList;
 import com.example.administrator.modelmall.ui.activities.BookDetails;
 import com.example.administrator.modelmall.ui.customview.ToastUtils;
@@ -25,7 +26,7 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-public class ListPageImpl extends BasePage implements BookListAdapter.OnBookListItemClickListener{
+public class ListPageImpl extends BasePage implements BookListAdapter.OnBookListItemClickListener {
 
     private static final String TAG = "ListPageImpl";
 
@@ -86,7 +87,13 @@ public class ListPageImpl extends BasePage implements BookListAdapter.OnBookList
         HttpUtils.sendOkHttpRequest(ModelConstant.BOOK_LIST, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                ToastUtils.showToast(context, "刷新失败", ToastUtils.LENGTH_LONG);
+                view.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        ToastUtils.showToast(context, "刷新失败", ToastUtils.LENGTH_LONG);
+                    }
+                });
+
             }
 
             @Override
@@ -99,6 +106,7 @@ public class ListPageImpl extends BasePage implements BookListAdapter.OnBookList
                 if (code != 200) {
                     return;
                 }
+
                 view.post(new Runnable() {
                     @Override
                     public void run() {
@@ -132,7 +140,7 @@ public class ListPageImpl extends BasePage implements BookListAdapter.OnBookList
 
     private void handleResponseData(String responseData) {
         BookList bookList = new Gson().fromJson(responseData, BookList.class);
-        if (bookList == null){
+        if (bookList == null) {
             return;
         }
         dataBeanList = bookList.getData();
@@ -142,11 +150,21 @@ public class ListPageImpl extends BasePage implements BookListAdapter.OnBookList
             return;
         }
         adapter.setData(dataBeanList);
+//        BookListDB db = new BookListDB();
+//        for (int i=0;i<dataBeanList.size();i++){
+//            db.setAuthor(dataBeanList.get(i).getAuthor());
+//            db.setBookInfo(dataBeanList.get(i).getBook_info());
+//            db.setBookName(dataBeanList.get(i).getBookname());
+//            db.setClassName(dataBeanList.get(i).getClass_name());
+//            db.setStartName(dataBeanList.get(i).getStat_name());
+//            db.setUrl(dataBeanList.get(i).getBook_cover());
+//            db.save();
+//        }
     }
 
     @Override
     public void click(int position) {
-        if(dataBeanList == null || dataBeanList.size() == 0){
+        if (dataBeanList == null || dataBeanList.size() == 0) {
             return;
         }
         Intent intent = new Intent(context, BookDetails.class);
@@ -155,5 +173,5 @@ public class ListPageImpl extends BasePage implements BookListAdapter.OnBookList
         context.startActivity(intent);
     }
 
-    
+
 }

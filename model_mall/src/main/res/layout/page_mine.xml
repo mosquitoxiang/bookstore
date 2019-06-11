@@ -7,15 +7,15 @@
     <!--  模拟就不使用 滑动效果了-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/dp_200"
         android:background="@color/orange"
         android:gravity="center"
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_20"
             android:src="@drawable/headprofit4" />
 
         <LinearLayout
@@ -28,11 +28,11 @@
                 android:id="@+id/edit_nick_name_page_mine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="@dimen/dp_5"
                 android:gravity="center"
                 android:text="克里斯"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="@dimen/sp_20"
                 tools:ignore="HardcodedText" />
 
             <ImageView
@@ -52,15 +52,15 @@
     <RelativeLayout
         android:id="@+id/rl_my_goods"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/dp_50"
         android:background="@color/white">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
             android:text="我的订单"
             android:textColor="@color/black"
             tools:ignore="HardcodedText" />
@@ -71,23 +71,23 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
                 android:text="全部订单"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
                 android:text=">"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
@@ -95,12 +95,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/dp_70"
         android:background="@color/white"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
@@ -109,16 +109,16 @@
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="{fa-credit-card}"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
+                android:background="@drawable/fukuan"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/dp_10"
                 android:text="待付款"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 
@@ -132,21 +132,21 @@
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="{fa-truck}"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
+                android:background="@drawable/shouhuo"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/dp_10"
                 android:text="待收货"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
@@ -155,8 +155,8 @@
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="{fa-commenting-o }"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
+                android:background="@drawable/pingjia"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -164,12 +164,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="待评价"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
@@ -178,16 +178,16 @@
             <com.joanzapata.iconify.widget.IconTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="{fa-server}"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
+                android:background="@drawable/shouhou"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/dp_10"
                 android:text="售后"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
     </LinearLayout>
@@ -195,17 +195,17 @@
     <RelativeLayout
         android:id="@+id/rl_goods_addr"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="25dp"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_25"
         android:background="@color/white"
-        android:padding="10dp">
+        android:padding="@dimen/dp_10">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:text="收货地址"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -215,24 +215,24 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:text=">"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rl_setting"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_10"
         android:background="@color/white"
-        android:padding="10dp">
+        android:padding="@dimen/dp_10">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:text="关于"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -242,7 +242,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:text=">"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
     </RelativeLayout>
 </android.support.v7.widget.LinearLayoutCompat>

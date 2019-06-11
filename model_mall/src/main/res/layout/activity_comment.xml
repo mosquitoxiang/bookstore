@@ -9,7 +9,7 @@
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/dp_70"
         android:background="@color/orange">
 
         <TextView
@@ -18,7 +18,7 @@
             android:gravity="center"
             android:text="评论"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="@dimen/sp_18"
             tools:ignore="HardcodedText" />
     </android.support.v7.widget.Toolbar>
 
@@ -29,27 +29,27 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:padding="10dp">
+            android:layout_height="@dimen/dp_70"
+            android:padding="@dimen/dp_10">
 
             <de.hdodenhof.circleimageview.CircleImageView
 
                 android:id="@+id/img_head"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
                 android:src="@drawable/chengxuyuan" />
 
             <TextView
                 android:id="@+id/user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_toEndOf="@id/img_head"
                 android:layout_toRightOf="@id/img_head"
                 android:text="dev"
                 android:textColor="@color/red"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -57,28 +57,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/user"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_toEndOf="@id/img_head"
                 android:layout_toRightOf="@id/img_head"
                 android:text="星期一 10:47am"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 tools:ignore="HardcodedText" />
         </RelativeLayout>
 
         <ImageView
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
             android:id="@+id/findBigImg"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="@dimen/dp_300"
             android:scaleType="fitXY" />
 
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_weight="1"
         android:id="@+id/rv_comment"/>
 
@@ -90,12 +90,12 @@
 
         <EditText
             android:id="@+id/editText"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dp_0"
             android:layout_weight="1"
             android:layout_height="wrap_content" />
 
         <Button
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="@dimen/dp_5"
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

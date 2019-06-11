@@ -13,22 +13,15 @@ import android.widget.Toast;
 
 import com.example.administrator.modelmall.Constant.ModelConstant;
 import com.example.administrator.modelmall.R;
-import com.example.administrator.modelmall.db.UserRegisterBean;
 
-import com.example.administrator.modelmall.entity.LoginBean;
 import com.example.administrator.modelmall.entity.RegisterBean;
 import com.example.administrator.modelmall.ui.customview.StatusBarUtils;
-import com.example.administrator.modelmall.ui.customview.ToastUtils;
 import com.example.administrator.modelmall.utils.HttpUtils;
-import com.example.administrator.modelmall.utils.MD5Utils;
 import com.example.administrator.modelmall.utils.RegularVerification;
 import com.google.gson.Gson;
 
-import org.litepal.LitePal;
-import org.litepal.crud.DataSupport;
 
 import java.io.IOException;
-import java.util.List;
 
 import butterknife.BindView;
 import okhttp3.Call;
@@ -102,7 +95,6 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_register:
-//                if (checkInfo()){
                     name = nickName.getText().toString();
                     email = userEmail.getText().toString();
                     pwd = userPwd.getText().toString();
@@ -125,7 +117,6 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
                             requestServer(responseData);
                         }
                     });
-//                }
                 break;
             case R.id.tv_to_login:
                 startActivity(new Intent(SignupActivity.this, LoginActivity.class));
