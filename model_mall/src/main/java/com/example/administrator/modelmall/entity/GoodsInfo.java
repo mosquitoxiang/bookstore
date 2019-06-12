@@ -2,9 +2,6 @@ package com.example.administrator.modelmall.entity;
 
 import java.util.List;
 
-/**
- * Create by SunnyDay on 2019/03/22
- */
 public class GoodsInfo {
 
     private List<ThreeBigImageBean> threeBigImage;

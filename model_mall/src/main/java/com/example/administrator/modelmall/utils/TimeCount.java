@@ -1,7 +1,6 @@
 package com.example.administrator.modelmall.utils;
 import android.os.CountDownTimer;
 /**
- * Create by SunnyDay on 2019/03/15
  * 倒计时工具封装
  */
 public class TimeCount extends CountDownTimer {

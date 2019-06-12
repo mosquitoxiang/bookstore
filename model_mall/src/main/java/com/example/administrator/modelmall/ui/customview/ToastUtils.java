@@ -8,9 +8,6 @@ import android.widget.Toast;
 
 import com.example.administrator.modelmall.R;
 
-/**
- *
- */
 public class ToastUtils {
 
     public static final int LENGTH_LONG = Toast.LENGTH_LONG;

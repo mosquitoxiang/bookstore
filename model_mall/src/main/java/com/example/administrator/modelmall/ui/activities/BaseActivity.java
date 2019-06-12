@@ -14,12 +14,7 @@ import android.view.WindowManager;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-/**
- * Create by SunnyDay on 2019/03/14
- * <p>
- * 此app activity的基类
- * （抽象类的设计，深入理解面向对象的核心思想）
- */
+
 @SuppressLint("Registered")
 public abstract class BaseActivity extends AppCompatActivity {
     private View mConvertView;

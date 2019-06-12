@@ -7,7 +7,6 @@ import com.bumptech.glide.Glide;
 import com.youth.banner.loader.ImageLoader;
 
 /**
- * Create by SunnyDay on 2019/03/15
  * Banner 的ImageLoader
  */
 public class ModelImageLoader extends ImageLoader {

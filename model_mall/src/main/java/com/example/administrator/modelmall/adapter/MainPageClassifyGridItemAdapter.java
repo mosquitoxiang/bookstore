@@ -19,12 +19,6 @@ import com.example.administrator.modelmall.R;
 import com.example.administrator.modelmall.entity.EntityMainPage;
 import com.example.administrator.modelmall.ui.customview.ToastUtils;
 
-
-/**
- * Create by SunnyDay on 2019/03/19
- * <p>
- * 首页的banner 展示
- */
 public class MainPageClassifyGridItemAdapter extends DelegateAdapter.Adapter<MainPageClassifyGridItemAdapter.MainViewHolder> {
     private Context context;
     private LayoutHelper layoutHelper;

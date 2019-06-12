@@ -5,11 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 
-/**
- *
- *
- * 五个界面的基类
- */
 public abstract class BasePage {
     public Context context;
     public View view;

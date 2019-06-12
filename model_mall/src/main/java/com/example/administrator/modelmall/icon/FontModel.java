@@ -4,7 +4,6 @@ import com.joanzapata.iconify.Icon;
 import com.joanzapata.iconify.IconFontDescriptor;
 
 /**
- * Create by SunnyDay on 2019/03/17
  *
  * 自定义字体图标模块
  *

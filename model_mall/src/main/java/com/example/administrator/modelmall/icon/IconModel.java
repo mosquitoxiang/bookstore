@@ -3,8 +3,6 @@ package com.example.administrator.modelmall.icon;
 import com.joanzapata.iconify.Icon;
 
 /**
- * Create by SunnyDay on 2019/03/17
- * <p>
  * 实现 Icon 接口
  */
 public enum IconModel implements Icon {

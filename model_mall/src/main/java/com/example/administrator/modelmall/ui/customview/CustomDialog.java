@@ -5,9 +5,6 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-/**
- *
- */
 public class CustomDialog extends Dialog {
     public CustomDialog(@NonNull Context context) {
         super(context);

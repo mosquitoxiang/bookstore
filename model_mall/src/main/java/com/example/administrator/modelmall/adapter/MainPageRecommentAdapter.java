@@ -19,12 +19,6 @@ import com.example.administrator.modelmall.R;
 import com.example.administrator.modelmall.entity.EntityMainPage;
 import com.example.administrator.modelmall.ui.activities.GoodsInfoActivity;
 
-
-/**
- * Create by SunnyDay on 2019/03/19
- * <p>
- * 首页的10个item下的一个图片展示
- */
 public class MainPageRecommentAdapter extends DelegateAdapter.Adapter<MainPageRecommentAdapter.MainViewHolder> implements View.OnClickListener {
     private Context context;
     private LayoutHelper layoutHelper;

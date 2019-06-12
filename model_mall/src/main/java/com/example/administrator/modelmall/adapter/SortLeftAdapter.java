@@ -23,9 +23,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Create by SunnyDay on 2019/03/26
- */
 public class SortLeftAdapter extends RecyclerView.Adapter<SortLeftAdapter.MyViewHolder>{
 
     List<BookCategory>  categoryList;

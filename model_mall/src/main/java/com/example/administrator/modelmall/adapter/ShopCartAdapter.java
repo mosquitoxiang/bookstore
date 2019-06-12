@@ -16,11 +16,6 @@ import com.orhanobut.logger.Logger;
 
 import java.util.List;
 
-/**
- * Create by SunnyDay on 2019/03/21
- * <p>
- * 购物车界面的adapter
- */
 public class ShopCartAdapter extends RecyclerView.Adapter<ShopCartAdapter.MyHolder> {
     private Context context;
     public List<Integer> mList;

@@ -1,2 +1,0 @@
-fragment不在使用 本来打算 viewpager+fragment
-结果改成ViewPager+5Views 封装抽取工厂模式设计

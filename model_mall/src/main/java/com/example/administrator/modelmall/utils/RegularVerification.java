@@ -3,7 +3,6 @@ package com.example.administrator.modelmall.utils;
 import java.util.regex.Pattern;
 
 /**
- * Create by SunnyDay on 2019/03/16
  * 正则验证包
  */
 public class RegularVerification {

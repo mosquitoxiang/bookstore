@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import com.example.administrator.modelmall.Constant.ModelConstant;
 
 /**
- * Create by SunnyDay on 2019/03/14
  * SharedPreferences 工具类
  */
 public class ModelPreference {

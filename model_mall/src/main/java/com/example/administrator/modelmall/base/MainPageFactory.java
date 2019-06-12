@@ -4,9 +4,6 @@ import android.content.Context;
 
 import com.example.administrator.modelmall.base.impl.MainPageImpl;
 
-/**
- *
- */
 public class MainPageFactory implements Provider {
 
     Context context;

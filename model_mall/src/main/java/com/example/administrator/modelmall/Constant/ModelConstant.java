@@ -1,8 +1,5 @@
 package com.example.administrator.modelmall.Constant;
 
-/**
- *  全局常量
- */
 public class ModelConstant {
 
 

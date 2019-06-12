@@ -1,8 +1,5 @@
 package com.example.administrator.modelmall.net.exception;
 
-/**
- * Create by SunnyDay on 2019/03/05
- */
 public class OkHttpException extends Exception {
 
     private int ecode;// 服务端返回码

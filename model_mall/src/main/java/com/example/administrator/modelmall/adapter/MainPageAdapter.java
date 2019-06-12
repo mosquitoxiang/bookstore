@@ -10,11 +10,6 @@ import com.example.administrator.modelmall.base.BasePage;
 
 import java.util.List;
 
-/**
- * Create by SunnyDay on 2019/03/15
- * <p>
- * 主界面 viewpager的 adapter
- */
 public class MainPageAdapter extends PagerAdapter {
     private List<BasePage> mList;
 

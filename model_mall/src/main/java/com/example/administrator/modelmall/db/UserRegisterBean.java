@@ -3,7 +3,6 @@ package com.example.administrator.modelmall.db;
 import org.litepal.crud.LitePalSupport;
 
 /**
- * Create by SunnyDay on 2019/03/16
  * 用户注册表
  * 存了用户注册的相关信息
  */

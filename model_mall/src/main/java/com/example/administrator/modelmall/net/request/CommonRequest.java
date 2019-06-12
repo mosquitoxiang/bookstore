@@ -5,8 +5,6 @@ import okhttp3.FormBody;
 import okhttp3.Request;
 
 /**
- * Create by SunnyDay on 2019/03/04
- *
  * @function 接收请求参数 为我们生成Request对象
  */
 public class CommonRequest {

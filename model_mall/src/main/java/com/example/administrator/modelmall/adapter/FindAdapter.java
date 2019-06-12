@@ -18,11 +18,6 @@ import com.example.administrator.modelmall.ui.customview.ToastUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Create by SunnyDay on 2019/03/25
- * <p>
- * 发现页面的adapter
- */
 public class FindAdapter extends RecyclerView.Adapter<FindAdapter.MyHolder> {
 
 

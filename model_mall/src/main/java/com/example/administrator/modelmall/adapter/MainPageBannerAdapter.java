@@ -20,12 +20,6 @@ import com.youth.banner.listener.OnBannerListener;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- * Create by SunnyDay on 2019/03/19
- *
- * 首页的banner 展示
- */
 public class MainPageBannerAdapter extends DelegateAdapter.Adapter<MainPageBannerAdapter.MainViewHolder> {
     private Context context;
     private LayoutHelper layoutHelper;

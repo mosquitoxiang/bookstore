@@ -12,9 +12,6 @@ import com.example.administrator.modelmall.utils.ModelPreference;
 
 import butterknife.BindView;
 
-/**
- * Create by SunnyDay on 2019/03/15
- */
 public class CountDownActivity extends BaseActivity {
     @BindView(R.id.tv_count_down)
     AppCompatTextView countDownText;

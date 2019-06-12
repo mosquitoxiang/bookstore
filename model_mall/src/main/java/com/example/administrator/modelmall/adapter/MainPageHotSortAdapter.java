@@ -19,13 +19,6 @@ import com.example.administrator.modelmall.R;
 import com.example.administrator.modelmall.entity.EntityMainPage;
 import com.example.administrator.modelmall.ui.activities.GoodsInfoActivity;
 
-
-
-/**
- * Create by SunnyDay on 2019/03/19
- * <p>
- * 首页的热搜adapter   大图+3小图的界面
- */
 public class MainPageHotSortAdapter extends DelegateAdapter.Adapter<MainPageHotSortAdapter.MainViewHolder> implements View.OnClickListener {
     private Context context;
     private LayoutHelper layoutHelper;

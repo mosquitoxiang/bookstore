@@ -8,12 +8,6 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.X509TrustManager;
 
-/**
- * Create by SunnyDay on 2019/03/05
- * <p>
- * https 相关知识 参考  张鸿洋 Android Https相关完全解析 当OkHttp遇到Https
- * 友情链接：https://blog.csdn.net/lmj623565791/article/details/48129405
- */
 public class HttpsUtils {
     /**
      * trust all https point

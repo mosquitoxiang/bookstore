@@ -5,9 +5,6 @@ import android.content.Context;
 import com.example.administrator.modelmall.base.impl.MainPageImpl;
 import com.example.administrator.modelmall.base.impl.ShoppingPageImpl;
 
-/**
- *
- */
 public class ShoppingPageFactory implements Provider {
 
     Context context;

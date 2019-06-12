@@ -15,12 +15,6 @@ import com.bumptech.glide.Glide;
 import com.example.administrator.modelmall.R;
 import com.example.administrator.modelmall.entity.EntityMainPage;
 
-
-/**
- * Create by SunnyDay on 2019/03/19
- * <p>
- * 首页的10个item下的一个图片展示
- */
 public class MainPageSingleImageAdapter extends DelegateAdapter.Adapter<MainPageSingleImageAdapter.MainViewHolder> {
     private Context context;
     private LayoutHelper layoutHelper;

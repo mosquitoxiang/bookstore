@@ -20,9 +20,6 @@ import static com.kongzue.dialog.v2.DialogSettings.STYLE_IOS;
 import static com.kongzue.dialog.v2.DialogSettings.STYLE_MATERIAL;
 import static com.kongzue.dialog.v2.DialogSettings.THEME_LIGHT;
 
-/**
- *
- */
 public class LatteApplication extends Application {
     @Override
     public void onCreate() {

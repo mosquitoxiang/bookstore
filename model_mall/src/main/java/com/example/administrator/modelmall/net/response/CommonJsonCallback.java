@@ -14,9 +14,6 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-/**
- * Create by SunnyDay on 2019/03/05
- */
 public class CommonJsonCallback implements Callback {
 
     /**
